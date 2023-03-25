@@ -1,0 +1,14 @@
+// ----------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// ----------------------------------------------------
+
+// Mixin to manage breakpoints
+// @require $breakpoints from variables
+// @param 'String' $breakpoint - Breakpoint name
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint ) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}

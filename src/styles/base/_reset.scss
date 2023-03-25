@@ -1,0 +1,48 @@
+// -----------------------------
+// This file contains reset CSS.
+// -----------------------------
+
+
+*, *::before, *::after { box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// Allow percentage based heights in site
+html, body { height: 100%; }
+
+// Adds accessible line height
+html { line-height: 1.5; }
+
+//
+html { font-size: 100%; }
+
+// Smooth scrolling
+html { scroll-behavior: smooth; }
+
+// Improve media defaults
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Remove built-in typography form styles
+input, button, textarea, select { font: inherit; }
+
+// Avoid text overflows
+p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+
+// Clean and tidy buttons
+a, a:visited, a:hover { text-decoration: none; }
+
+// remove animations for people who have turned them off
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
