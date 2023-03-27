@@ -1,6 +1,6 @@
-@use 'abstracts/functions';
-@use 'abstracts/mixins';
-@use 'abstracts/variables';
+@use 'abstracts';
+@use 'base';
+@use 'components';
+@use 'layout';
 
-@use 'base/reset';
-@use 'base/typography';
+@use 'pages/index';
