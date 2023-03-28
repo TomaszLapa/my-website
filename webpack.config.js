@@ -46,12 +46,12 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Webpack App',
+            title: 'Tomasz Łapa Portfolio',
             filename: 'index.html',
             template: 'src/index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/[name][contenthash:8].css'
+            filename: 'css/[name].[contenthash:8].css'
         }),
         // new BundleAnalyzerPlugin()
     ]
