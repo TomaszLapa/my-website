@@ -1,3 +1,19 @@
 // --------------------------------------------------------------------
 // This file contains all styles related to the typography of the site.
 // --------------------------------------------------------------------
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');}
+
+@font-face {
+    font-family: 'PT Mono';
+    src: url(https://fonts.gstatic.com/s/ptmono/v13/9oRONYoBnWILk-9AnC8zMw.woff2) format('woff2');}
+
+$text-primary: rgb(240, 240, 240);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: $text-primary;
+}
