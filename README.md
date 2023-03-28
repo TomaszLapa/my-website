@@ -1,2 +1,2 @@
 # my-website
-Code pf my portfolio website
+Code of my portfolio website
