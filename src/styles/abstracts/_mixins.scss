@@ -12,3 +12,14 @@
     }
   }
 }
+
+// -----------------------------
+// Mixin to build hamburger bars
+//------------------------------
+@mixin hamburger-line {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: var(--hamburger-bar-height);
+  background-color: var(--hamburger-bar-color);
+}
