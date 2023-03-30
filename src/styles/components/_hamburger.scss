@@ -1,11 +1,15 @@
 @use '../abstracts';
 
 .hamburger {
+    position: absolute;
+    top: 2.75rem;
+    right: 2rem;
     display: inline-block;
     padding: var(--hamburger-padding);
     cursor: pointer;
     background-color: transparent;
     border: 0;
+    transition: transform .3s .1s ease-in-out;
 }
 
 .hamburger__box {
@@ -21,6 +25,7 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    transition: background-color .1s .2s ease-in-out;
 }
 
 .hamburger__inner::before,
@@ -29,4 +34,30 @@
 
     content: '';
     left: 0;
+    transition: transform .2s .2s ease-in-out;
+}
+
+.hamburger__inner::before {
+    top: -10px;
+}
+
+.hamburger__inner::after {
+    top: 10px;
+}
+
+// Hamburger menu is open
+.hamburger--active {
+    transform: translateX(-15rem);
+}
+
+.hamburger--active .hamburger__inner {
+    background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner::after {
+    transform: translateY(-10px) rotate(-45deg);
 }
