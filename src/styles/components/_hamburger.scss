@@ -1,9 +1,9 @@
 @use '../abstracts';
 
 .hamburger {
-    position: absolute;
-    top: 2.75rem;
-    right: 2rem;
+    // position: relative;
+    // top: 2.75rem;
+    // right: 2rem;
     display: inline-block;
     padding: var(--hamburger-padding);
     cursor: pointer;

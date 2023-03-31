@@ -3,6 +3,10 @@
     margin-top: 2.75rem;
     margin-bottom: 2.75rem;
     padding-inline: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {

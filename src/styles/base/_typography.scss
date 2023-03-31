@@ -10,10 +10,18 @@
     font-family: 'PT Mono';
     src: url(https://fonts.gstatic.com/s/ptmono/v13/9oRONYoBnWILk-9AnC8zMw.woff2) format('woff2');}
 
-$text-primary: rgb(240, 240, 240);
+:root {
+    --text-primary: rgb(240, 240, 240);
+    --text-secondary: rgb(180, 180, 180);
+}
+
 
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
-    color: $text-primary;
+    color: var(--text-secondary);
+}
+
+.nav__item > a {
+    color: var(--text-secondary);
 }
