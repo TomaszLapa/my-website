@@ -1,0 +1,28 @@
+.button {
+    position: relative;
+    font-family: 'PT Mono', sans-serif;
+    letter-spacing: 0.2rem;
+    transition: all .4s ease-in-out;
+}
+
+.button:hover {
+    color: var(--text-primary);
+}
+
+.button::before,
+.button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.button::after {
+    
+}
+
+.button:hover::after {
+    background-color: var(--background-primary);
+}
