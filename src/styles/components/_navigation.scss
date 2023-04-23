@@ -9,8 +9,12 @@
     align-items: center;
     top: 0;
     right: 0;
-    transform: translateX(15rem);
+    // transform: translateX(15rem);
     transition: transform .3s .1s ease-in-out;
+
+    @media (min-width: 50rem) {
+        flex-direction: row;
+    }
 }
 
 .nav--active {
@@ -26,4 +30,11 @@
     margin-bottom: 1.25rem;
     width: inherit;
     text-align: center;
+    letter-spacing: 1.6px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        color: var(--text-primary);
+    }
 }

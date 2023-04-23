@@ -1,15 +1,16 @@
 @use '../abstracts';
 
 .hamburger {
-    // position: relative;
-    // top: 2.75rem;
-    // right: 2rem;
     display: inline-block;
     padding: var(--hamburger-padding);
     cursor: pointer;
     background-color: transparent;
     border: 0;
     transition: transform .3s .1s ease-in-out;
+
+    @media (min-width: 50rem) {
+        display: none;
+    }
 }
 
 .hamburger__box {
