@@ -19,6 +19,15 @@ $breakpoints: (
 :root {
   --background-primary: rgb(43, 46, 53);
   --background-secondary: rgb(43, 61, 104);
+  --background-shadow: rgb(25, 25, 25);
+}
+
+// ------
+// Header
+// ------
+
+:root {
+  --header-height: 4rem;
 }
 
 

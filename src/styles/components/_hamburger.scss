@@ -47,9 +47,6 @@
 }
 
 // Hamburger menu is open
-.hamburger--active {
-    transform: translateX(-15rem);
-}
 
 .hamburger--active .hamburger__inner {
     background-color: transparent;
