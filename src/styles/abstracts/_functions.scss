@@ -1,3 +1,8 @@
 // -------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -------------------------------------------------------
+
+// Converts pixels to rems
+@function rem($pixels, $context: 16) {
+    @return ($pixels / $context) * 1rem;
+}

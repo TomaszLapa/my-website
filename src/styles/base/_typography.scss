@@ -14,15 +14,3 @@
     --text-primary: rgb(240, 240, 240);
     --text-secondary: rgb(180, 180, 180);
 }
-
-
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-}
-
-a,
-a:visited {
-    color: var(--text-secondary);
-}

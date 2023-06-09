@@ -17,9 +17,13 @@ $breakpoints: (
 // ------
 
 :root {
-  --background-primary: rgb(43, 46, 53);
-  --background-secondary: rgb(43, 61, 104);
+  // --background-primary: rgb(43, 46, 53);
+  --background-primary: #081b29;
+  // --background-secondary: rgb(43, 61, 104);
+  --background-secondary: #112e42;
   --background-shadow: rgb(25, 25, 25);
+  --accent-color: #00abf0;
+
 }
 
 // ------
