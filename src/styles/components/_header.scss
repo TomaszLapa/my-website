@@ -1,0 +1,34 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: transparent;
+}
+
+.header__logo {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.header__navbar a {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    font-weight: 400;
+    margin-left: 3rem;
+    transition: .25s ease-in-out;
+
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.header__navbar a.active {
+    color: var(--accent-color);
+}

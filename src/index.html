@@ -9,14 +9,35 @@
 <body>
     
     <header class="header">
-        <a href="#" class="logo">Tomasz Łapa</a>
-        <nav class="navbar">
-            <a href="#">Strona główna</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Oferta</a>
-            <a href="#">Kontakt</a>
+        <a href="#" class="header__logo">Tomasz Łapa</a>
+
+        <button class="hamburger">
+            <span class="hamburger__box">
+                <span class="hamburger__inner">
+                </span>
+            </span>
+        </button>
+
+        <nav class="header__navbar">
+            <a href="#hero" class="active">Strona główna</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#offer">Oferta</a>
+            <a href="#contact">Kontakt</a>
         </nav>
     </header>
+
+    <section class="hero" id="hero">
+        <div class="hero__content">
+            <h1 class="hero__header">Cześć! Jestem <span>Tomasz Łapa</span></h1>
+            <div class="text-animate">
+                <h2>Frontend Developer</h2>
+            </div>
+
+            <div class="btn-box">
+                <button class="btn btn--hero">Kontakt</button>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>

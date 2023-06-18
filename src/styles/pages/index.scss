@@ -1,1 +1,42 @@
 @use '../abstracts';
+
+body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 10rem 10% 2rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.hero__content {
+    max-width: 60rem;
+    padding-inline: 5%;
+    background: url('../../assets/foto.jpg');
+}
+
+.hero__header {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.text-animate h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--text-primary); //fallback for webkit-text-stroke
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: var(--accent-color);
+}
+
+.btn-box {
+    margin-block: 2rem;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

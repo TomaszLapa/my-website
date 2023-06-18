@@ -2,15 +2,27 @@
 // This file contains all styles related to the typography of the site.
 // --------------------------------------------------------------------
 
-@font-face {
-    font-family: 'Poppins';
-    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');}
+// @font-face {
+//     font-family: 'Poppins';
+//     src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-@font-face {
-    font-family: 'PT Mono';
-    src: url(https://fonts.gstatic.com/s/ptmono/v13/9oRONYoBnWILk-9AnC8zMw.woff2) format('woff2');}
+// @font-face {
+//     font-family: 'PT Mono';
+//     src: url(https://fonts.gstatic.com/s/ptmono/v13/9oRONYoBnWILk-9AnC8zMw.woff2) format('woff2');}
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
 :root {
     --text-primary: rgb(240, 240, 240);
     --text-secondary: rgb(180, 180, 180);
+}
+
+* {
+    font-family: 'Poppins', 'PT Mono', sans-serif;
+}
+
+a,
+a:visited,
+a:hover {
+    color: var(--text-primary);
 }

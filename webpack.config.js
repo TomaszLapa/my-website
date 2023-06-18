@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-const devMode = true;
+const devMode = false;
 
 module.exports = {
     mode: devMode? 'development' : 'production',
@@ -40,7 +40,16 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif|ico|webp|avif)$/i,
-                type: 'asset/resource'
+                // type: 'asset/resource'
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: { //grafiki chcemy w katalogu dist/images
+                            context: "public",
+                            name: "/images/[name]-[hash].[ext]",
+                        },
+                    },
+                ],
             }
         ]
     },
